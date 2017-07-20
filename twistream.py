@@ -2,6 +2,9 @@
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
+import json
+import pandas as pd
+import matplotlib.pyplot as plt
 
 #Variables that contains the user credentials to access Twitter API 
 access_token = ""
@@ -14,6 +17,8 @@ consumer_secret = ""
 class StdOutListener(StreamListener):
 
     def on_data(self, data):
+        # with open('stream.txt', 'a') as the_file:
+        #  the_file.write(data)
         print data
         return True
 
@@ -29,5 +34,20 @@ if __name__ == '__main__':
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l)
 
-    #This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
-    stream.filter(track=['reykjavik'])
+    #This line filter Twitter Streams to capture data by the keywords: 'Prague'
+    stream.filter(track=['Prague'])
+
+
+    data = 'stream.txt'
+
+    tweets_data = []
+    tweets_file = open(data, "r")
+    for line in tweets_file:
+      try:
+           tweet = json.loads(line)
+           tweets_data.append(tweet)
+           print tweets_data
+      except:
+            continue
+
+
