@@ -6,4 +6,4 @@ A data pipeline to ingest data from Twitter Streaming API. Processes the data us
 * storage - DynamoDB/Rethink/Redis/Cassandra
 
 
-https://travis-ci.org/n3o-Bhushan/Data-Pipeline.svg?branch=master
+[![Build Status](https://travis-ci.org/n3o-Bhushan/Data-Pipeline.svg?branch=master)](https://travis-ci.org/n3o-Bhushan/Data-Pipeline)
