@@ -3,7 +3,7 @@ A data pipeline to ingest data from Twitter Streaming API. Processes the data us
 
 * Data ingestion - Different producers (ElasticSearch/Flume/Kibana)
 * Stream processing - Kafka and Spark
-* storage - DynamoDB/Rethink/Redis/Cassandra
+* storage - Rethink/Redis/Cassandra
 * Feature - Use RethinkDB features to perform operations on change of the feed. Event based system.
 
 
