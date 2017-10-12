@@ -6,10 +6,10 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
-access_token = "842328502229598208-Xiv3DnlPD4oTC7mXXQk8JQmlxgrqS1e"
-access_token_secret = "BnFd9gePFUxCkydqJfjnBS9jTpmBvCLHEBPeVwprLq2hJ"
-consumer_key = "rmOUn4KvriYHVZAKqjOvKYUhs"
-consumer_secret = "GB8YTREn8ojujP8a3pj4Ep9Bsu0vOWXSiMu7fGIWyw5GUGX2BL"
+access_token = ""
+access_token_secret = ""
+consumer_key = ""
+consumer_secret = ""
 
 class StdOutListener(StreamListener):
 
